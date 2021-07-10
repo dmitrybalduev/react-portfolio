@@ -1,4 +1,5 @@
 import React from 'react';
+import {Form, Button} from 'react-bootstrap'
 
 
 function Contact(){
@@ -9,23 +10,27 @@ function Contact(){
 
     return (
         <div>
-            <p>Contact form:</p>
-
-            <form>
-                <label>Name: </label>
-                <br></br>
-                <input id='nameInput' placeholder='Enter your name'></input>
-                <br></br>
-                <label>Email: </label>
-                <br></br>
-                <input id='emailInput' placeholder='Enter your email'></input>
-                <br></br>
-                <label>Message: </label>
-                <br></br>
-                <input id='messageInput' placeholder='Enter your message'></input>
-                <br></br>
-                <button id='contactSubmitButton' type="button"  onClick={renderSubmit} >Submit</button>
-            </form>
+            <Form>
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Name:</Form.Label>
+                    <Form.Control id='nameInput' type="text" placeholder="Enter your name" />
+                </Form.Group>
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Label>Email:</Form.Label>
+                    <Form.Control type="email" placeholder="Enter your email" />
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                    <Form.Label>Message:</Form.Label>
+                    <Form.Control placeholder='Enter your message' as="textarea" rows={3} />
+                </Form.Group>
+                <Form.Group controlId="formBasicRange">
+                    <Form.Label>How are you satisfied with our application?</Form.Label>
+                    <Form.Control type="range" />
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                    Submit
+                </Button>
+            </Form> 
         </div>
     )
 }
