@@ -1,7 +1,5 @@
 import React from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
 
 function Header(){
     return (
@@ -16,6 +14,7 @@ function Header(){
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
+        
     )
 }
 export default Header;
