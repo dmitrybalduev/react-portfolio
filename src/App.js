@@ -6,14 +6,16 @@ import Portfolio from './components/Portfolio';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
+import React from "react";
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 function App() {
   return (
-    <Router>
-        <div className="flex-column justify-flex-start min-100-vh">
+    <div style={{ background: `#a8dadc`, height:"100hv" , position: 'absolute', width: "100%"}}>
+    <Router >
+        <div className="flex-column justify-flex-start min-100-vh" >
           <Header />
           <div className="container">
             <Route exact path="/">
@@ -29,9 +31,11 @@ function App() {
               <Resume />
             </Route>
           </div>
-          <Footer />
+          
         </div>
+        <Footer />
       </Router>
+      </div>
   )
 }
 
