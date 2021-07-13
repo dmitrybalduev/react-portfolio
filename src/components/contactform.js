@@ -23,11 +23,11 @@ function Contact(){
                     <Form.Label>Message:</Form.Label>
                     <Form.Control placeholder='Enter your message' as="textarea" rows={3} />
                 </Form.Group>
-                <Form.Group controlId="formBasicRange">
+                <Form.Group controlId="formBasicRange" >
                     <Form.Label>How are you satisfied with our application?</Form.Label>
                     <Form.Control type="range" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="warning" type="submit">
                     Submit
                 </Button>
             </Form> 

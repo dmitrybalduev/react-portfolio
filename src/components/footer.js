@@ -20,7 +20,7 @@ const Footer = () => {
             &larr; Go Back
           </button>
         )}
-        <h4>&copy; {new Date().getFullYear()} - Tech Friends</h4>
+        <h4>&copy; {new Date().getFullYear()} - Dmitry Balduev</h4>
         <a href="https://github.com/dmitrybalduev" target="_blank">
           <FaGithub size="2em" color="#343a40"/>
         </a>
